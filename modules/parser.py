@@ -1,5 +1,5 @@
 import os
-from .show import show_help, show_dir, get_info
+from .show import show_help, show_dir, show_info
 from .check import check_folder, valid_command_input
 from .mod import create_folder, remove_folder, create_file, remove_file
 import config.settings as cs
@@ -46,7 +46,7 @@ def command_parser(command):
 
   elif current_command == 'info':
     if valid_command_input(command_input):
-      get_info(first_input)
+      show_info(first_input)
 
   elif current_command == 'exit':
     exit()
