@@ -46,7 +46,7 @@ def command_parser(command):
 
   elif current_command == 'info':
     if valid_command_input(command_input):
-      get_info(command_input)
+      get_info(first_input)
 
   elif current_command == 'exit':
     exit()
