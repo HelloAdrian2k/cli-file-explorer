@@ -17,7 +17,7 @@ def remove_folder(input_folders):
       os.rmdir(folder)
       print(f'Removed: {folder}')
     except FileNotFoundError:
-      print(f'This folder doesn\'t exists: {folder}')
+      print(f'This folder does not exist: {folder}')
     except NotADirectoryError:
       print(f'This is not a folder: {folder}')
     except OSError:
@@ -45,7 +45,7 @@ def remove_file(input_files):
       os.remove(file)
       print(f'Removed: {file}')
     except FileNotFoundError:
-      print(f'This file doesn\'t exists: {file}')
+      print(f'This file does not exist: {file}')
     except PermissionError:
       print(f'This is not a file: {file}')
   
