@@ -13,10 +13,18 @@ def show_dir(path):
       print(f'[FILE] {i}')
 
 def show_help():
-  print('''______________________________________________________
-    Here you have the available commands you can use:\n
-    help -> Repeat command list
-    cd -> Navigate into paths
-    ls -> List directory
-    exit -> Exits the CLI
-    ______________________________________________________''')
+  print('''
+  ______________________________________________________
+  Here you have the available commands you can use:\n
+  help -> Repeat command list
+  cd path -> Navigate into paths
+  ls path(optional) -> List directory
+  mkdir dir1 dir2 ... -> Make folders
+  rmdir dir1 dir2 ... -> Remove folders
+  touch file1 file2 ... -> Make files
+  rm file1 file2 ... -> Remove files
+  rename from to -> Rename files or folders
+  info file/folder -> Gets information
+  exit -> Exits the CLI
+  ______________________________________________________
+  ''')
