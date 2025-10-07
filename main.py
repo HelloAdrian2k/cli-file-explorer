@@ -1,5 +1,3 @@
-
-import os
 from modules.show import show_current_folder, show_help
 from modules.check import user_input, check_user_input
 from modules.parser import command_parser
@@ -14,6 +12,10 @@ def main_menu():
     if check_user_input(user_command):
       command_parser(user_command)
 
-print('\nWelcome back to the File Explorer CLI!')
-show_help()
-main_menu()
+if __name__ == '__main__':
+  print('\nWelcome back to the File Explorer CLI!')
+  show_help()
+  main_menu()
+
+
+  
